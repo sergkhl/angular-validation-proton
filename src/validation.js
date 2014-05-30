@@ -412,7 +412,8 @@
 //                        '<span ng-show="!errList.length && dirty" class="glyphicon glyphicon-ok form-control-feedback"></span>' +
 //                        '<span ng-show="errList.length" class="glyphicon glyphicon-remove form-control-feedback"></span>' +
                         '<div class="custom-error"><span ng-repeat="err in errList | limitTo:1">{{err.message}}</span></div>');
-                    //contentTr.after(element);
+                    //contentTr.insertAfter(element);
+                    element.parent().append(contentTr);
                     $compile(contentTr)(scope);
                 }
             };

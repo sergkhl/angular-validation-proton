@@ -55,7 +55,12 @@ gulp.task('scripts', function () {
 });
 
 
+/********* watch ***********/
+gulp.task('watch', function() {
+    gulp.watch(modules.js, ['scripts']);
+});
+
 /********* default ***********/
 gulp.task('default', function() {
-    gulp.start('scripts');
+    gulp.start('scripts', 'watch');
 });
