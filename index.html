@@ -13,7 +13,7 @@
     <div class="form-group">
         <label for="inputType" class="col-md-2 control-label">Username</label>
         <div class="col-md-3">
-            <input type="text" class="form-control" id="inputType" placeholder="validator word, length (0,15)" ng-model="fio" validator="word" length="0,15">
+            <input type="text" class="form-control" id="inputType" placeholder="validator word, length (0,15)" ng-model="fio" validator="word" length="0,15" ng-model-options="{ debounce: 500 }">
         </div>
         <button type="button" class="btn btn-success" ng-disabled="validationForm.$invalid">Save</button>
     </div>

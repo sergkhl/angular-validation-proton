@@ -684,6 +684,11 @@
                     //var validityClass = '\'has-success has-feedback\' : ' + element.closest("form").attr('name') + '.' + ctrl.attr('name') + '.$valid && ' + element.closest("form").attr('name') + '.' + ctrl.attr('name') + '.$dirty, \'has-error has-feedback\': ' + element.closest("form").attr('name') + '.' + ctrl.attr('name') + '.$invalid && ' + element.closest("form").attr('name') + '.' + ctrl.attr('name') + '.$dirty';
                     //element.wrapAll('<div class="has-feedback" />');
 //                    element.wrapAll('<div />');
+
+//                    if (!attrs.ngModelOptions) {
+//                        element.attr("ng-model-options","{ debounce: 500 }");
+//                    }
+
                     element.wrap('<div />');
                     //element.wrapAll('<div ng-class="errList.length ? \'has-error\' : \'has-success\'" class="has-feedback" />');
                     //parentDiv = element.removeAttr('validator').parent();
