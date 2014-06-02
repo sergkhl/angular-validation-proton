@@ -167,6 +167,9 @@
                      */
                     var validator = attrs.validator.split(',');
 
+                    /**
+                     * check length function
+                     */
                     if (attrs.length) {
                         var curLength = element[0].value.length;
                         length = attrs.length.split(',');

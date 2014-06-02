@@ -38,7 +38,8 @@
                 spaceWord: /^[а-яА-ЯёЁa-zA-Z-\s]*$/,
                 punctuationWord: /^[а-яА-ЯёЁa-zA-Z-\.\,]*$/,
                 minMaxLength: /^.{5,250}$/,
-                date: /^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[012])\.(19|20)\d\d$/
+                date: /^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[012])\.(19|20)\d\d$/,
+                latin: /^[a-zA-Z0-9]+$/
             };
 
 
@@ -81,6 +82,10 @@
                 },
                 date: {
                     error: 'Некорректная дата',
+                    success: 'success'
+                },
+                latin: {
+                    error: 'Только латинские буквы',
                     success: 'success'
                 }
             };
@@ -451,6 +456,9 @@
                      */
                     var validator = attrs.validator.split(',');
 
+                    /**
+                     * check length function
+                     */
                     if (attrs.length) {
                         var curLength = element[0].value.length;
                         length = attrs.length.split(',');

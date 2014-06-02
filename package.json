@@ -15,6 +15,6 @@
     "gulp-rename": "~1.2.0",
     "gulp-livereload": "~1.2.0",
     "tiny-lr": "0.0.5",
-    "gulp-inject": "~0.4.1",
+    "gulp-inject": "~0.4.1"
   }
 }

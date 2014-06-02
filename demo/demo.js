@@ -3,5 +3,7 @@
  */
 angular.module('app', ['validation'])
 .controller('HomeCtrl', function($scope) {
+        window.scope = $scope;
+        $scope.fio = 'kavabanga';
 
     });
